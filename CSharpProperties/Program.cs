@@ -15,6 +15,10 @@ namespace CSharpProperties
             {
                 return days;
             }
+            set
+            {
+                days = value;
+            }
         }
     }
 
@@ -24,6 +28,9 @@ namespace CSharpProperties
         {
             TimePeriod time = new TimePeriod();
             Console.WriteLine(time.Days);
+            time.Days = 5;
+            Console.WriteLine(time.Days);
+            Console.ReadLine();
         }
     }
 }
